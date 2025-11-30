@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #1a1a1a;
+    color: white;
+    padding: 20px;
+}
+
+/* Landing page */
+.landing-page {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.landing-page .container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.landing-page h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.option {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.option:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-5px);
+}
+
+.option h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.option p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9em;
+}
+
+.icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+/* Common */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Video elements */
+video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin: 0 auto 30px;
+}
+
+/* Controls */
+.controls {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.device-selector {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.device-selector label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.device-selector select {
+    width: 300px;
+    max-width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+    margin: 0 auto;
+    display: block;
+}
+
+select option {
+    background: #2a2a2a;
+    color: white;
+    padding: 10px;
+}
+
+button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #5568d3;
+}
+
+button:disabled {
+    background: #444;
+    cursor: not-allowed;
+}
+
+/* Share link */
+.share-link {
+    background: rgba(102, 126, 234, 0.2);
+    border: 2px dashed #667eea;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.share-link input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 14px;
+}
+
+/* Status */
+.status {
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+.status.waiting {
+    background: #ffa500;
+}
+
+.status.streaming,
+.status.connected {
+    background: #4CAF50;
+}
+
+.status.error {
+    background: #f44336;
+}
+
+.status.connecting {
+    background: #ffa500;
+}
+
+.stats {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Join form */
+.join-form {
+    max-width: 400px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.join-form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+}
+
+.join-form button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* Video controls */
+.video-controls {
+    text-align: center;
+    margin-top: 20px;
+}

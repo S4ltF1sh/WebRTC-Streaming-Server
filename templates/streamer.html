@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamer - P2P WebRTC</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Streamer Mode</h1>
+        </div>
+        
+        <video id="localVideo" autoplay muted playsinline></video>
+        
+        <div class="controls">
+            <!-- Permission request section -->
+            <div id="permissionSection" style="display: none; text-align: center; margin-bottom: 20px;">
+                <button id="selectDeviceBtn">Select Camera & Microphone</button>
+            </div>
+            
+            <!-- Device selectors section -->
+            <div id="deviceSelectorsSection" style="display: none;">
+                <div class="device-selector">
+                    <label>Camera:</label>
+                    <select id="videoSelect"></select>
+                </div>
+                <div class="device-selector">
+                    <label>Microphone:</label>
+                    <select id="audioSelect"></select>
+                </div>
+            </div>
+            
+            <button id="startBtn">Start Streaming</button>
+            <button id="stopBtn" disabled>Stop Streaming</button>
+        </div>
+        
+        <div id="shareSection" style="display: none;">
+            <div class="share-link">
+                <h3>Share this link with viewers:</h3>
+                <input type="text" id="shareLink" readonly>
+                <button id="copyBtn">Copy Link</button>
+            </div>
+        </div>
+        
+        <div id="status" class="status" style="display: none;"></div>
+        <div id="stats" class="stats"></div>
+    </div>
+    
+    <script src="/static/js/streamer.js"></script>
+</body>
+</html>

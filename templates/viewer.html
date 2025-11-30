@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewer - P2P WebRTC</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Viewer Mode</h1>
+        </div>
+        
+        <div id="joinForm" class="join-form">
+            <h2>Enter Room ID</h2>
+            <input type="text" id="roomInput" placeholder="Room ID" />
+            <button id="joinBtn">Join Room</button>
+        </div>
+        
+        <div id="videoSection" style="display: none;">
+            <div id="status" class="status connecting">Connecting...</div>
+            <video id="remoteVideo" autoplay playsinline muted></video>
+            <div class="video-controls">
+                <button id="unmuteBtn">🔇Unmute</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/static/js/viewer.js"></script>
+</body>
+</html>
