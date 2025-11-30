@@ -154,4 +154,4 @@ Share the forwarded address with others to let them access your streamer/viewer!
 
 ## License
 
-MIT
+[MIT](https://github.com/S4ltF1sh/WebRTC-Streaming-Server/blob/main/LICENSE)
